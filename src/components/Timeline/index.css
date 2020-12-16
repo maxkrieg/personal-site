@@ -1,0 +1,26 @@
+.timeline__icon-wrapper {
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+}
+
+.timeline__icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.timeline__timeline-element .vertical-timeline-element-date {
+  text-align: left;
+}
+
+.timeline__element-description {
+  text-align: left;
+  margin: 0 !important;
+  padding-left: 20px;
+}
