@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Container fluid>
         <Row>
-          <Image src={banner} style={{ width: '100%' }} />
+          <Image src={banner} style={{ width: '100%' }} fluid />
         </Row>
         {sections.map(({ title, content }, i) => (
           <Row

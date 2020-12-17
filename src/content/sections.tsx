@@ -16,7 +16,12 @@ const sections: Section[] = [
     title: 'about',
     content: (
       <div>
-        <Image src={maxRowanPhoto} roundedCircle style={{ height: '200px', width: '200px' }} />
+        <Image
+          src={maxRowanPhoto}
+          roundedCircle
+          style={{ height: '200px', width: '200px' }}
+          fluid
+        />
         <div style={{ height: '16px' }} />
         <p style={{ padding: '0 10%' }}>
           I'm a passionate Software Engineer who loves to collaborate with others to solve hard

@@ -1,6 +1,8 @@
 import React from 'react'
-import { RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts'
+import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer } from 'recharts'
 import { Tab, Row, Col, Nav } from 'react-bootstrap'
+import './index.css'
+import useWindowDimensions from '../../utils/useWindowDimensions'
 
 interface SkillSectionDataItem {
   name: string
@@ -85,24 +87,38 @@ interface ChartProps {
 }
 
 const SkillRadarChart: React.FC<ChartProps> = ({ data }) => {
-  const newData = data.map(skill => ({ ...skill, fullMark: 100 }))
+  const newData = data.map((skill) => ({ ...skill, fullMark: 100 }))
   return (
-    <RadarChart width={600} height={400} data={newData} style={{ margin: '0 auto' }}>
-      <PolarGrid />
-      <PolarAngleAxis dataKey="name" />
-      <Radar name="Skill Level" dataKey="value" stroke="#007BFF" fill="#007BFF" fillOpacity={0.7} />
-    </RadarChart>
+    <ResponsiveContainer width="90%" height={400} className="skill_chart__container">
+      <RadarChart data={newData} style={{ margin: '0 auto' }}>
+        <PolarGrid />
+        <PolarAngleAxis dataKey="name" />
+        <Radar
+          name="Skill Level"
+          dataKey="value"
+          stroke="#007BFF"
+          fill="#007BFF"
+          fillOpacity={0.7}
+        />
+      </RadarChart>
+    </ResponsiveContainer>
   )
 }
 
 const SkillChart: React.FC = () => {
+  const { width } = useWindowDimensions()
   return (
     <Tab.Container id="center-tabs-example" defaultActiveKey="languages">
       <Row className="justify-content-md-center">
-        <Col sm={2}>
-          <Nav variant="pills" className="flex-column" style={{ paddingTop: '70px' }}>
+        <Col sm={12} md={12} lg={9} xl={8}>
+          <Nav
+            fill
+            variant="pills"
+            style={{ paddingTop: '70px' }}
+            className={width < 730 ? 'flex-column' : ''}
+          >
             {SKILL_SECTIONS.map((section: SkillSection, i) => (
-              <Nav.Item style={{ textAlign: 'left' }} key={i}>
+              <Nav.Item key={i}>
                 <Nav.Link eventKey={section.name.toLowerCase().replace(' ', '-')}>
                   {section.name}
                 </Nav.Link>
@@ -110,7 +126,9 @@ const SkillChart: React.FC = () => {
             ))}
           </Nav>
         </Col>
-        <Col sm={5}>
+      </Row>
+      <Row className="justify-content-md-center">
+        <Col>
           <Tab.Content>
             {SKILL_SECTIONS.map((section: SkillSection, i) => (
               <Tab.Pane eventKey={section.name.toLowerCase().replace(' ', '-')} key={i}>
