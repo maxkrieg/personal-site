@@ -27,8 +27,8 @@ function App() {
             style={i % 2 === 0 ? { backgroundColor: DARK_BG } : { backgroundColor: LIGHT_BG }}
           >
             <Container fluid className="home_section-container">
-              <Row noGutters>
-                <Col>
+              <Row noGutters className="justify-content-md-center">
+                <Col xs={12} sm={12}>
                   <h2>{title}</h2>
                   {content}
                 </Col>

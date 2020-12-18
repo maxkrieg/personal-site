@@ -111,12 +111,7 @@ const SkillChart: React.FC = () => {
     <Tab.Container id="center-tabs-example" defaultActiveKey="languages">
       <Row className="justify-content-md-center">
         <Col sm={12} md={12} lg={9} xl={8}>
-          <Nav
-            fill
-            variant="pills"
-            style={{ paddingTop: '70px' }}
-            className={width < 730 ? 'flex-column' : ''}
-          >
+          <Nav fill variant="pills" className={width < 730 ? 'flex-column' : ''}>
             {SKILL_SECTIONS.map((section: SkillSection, i) => (
               <Nav.Item key={i}>
                 <Nav.Link eventKey={section.name.toLowerCase().replace(' ', '-')}>

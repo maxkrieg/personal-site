@@ -13,17 +13,12 @@ interface Section {
 
 const sections: Section[] = [
   {
-    title: 'about',
+    title: 'about me',
     content: (
       <div>
-        <Image
-          src={maxRowanPhoto}
-          roundedCircle
-          style={{ height: '200px', width: '200px' }}
-          fluid
-        />
+        <Image src={maxRowanPhoto} roundedCircle style={{ height: '20%', width: '20%' }} fluid />
         <div style={{ height: '16px' }} />
-        <p style={{ padding: '0 10%' }}>
+        <p>
           I'm a passionate Software Engineer who loves to collaborate with others to solve hard
           problems. I enjoy full-stack web development as well as Dev Ops work. I believe in{' '}
           <a
@@ -47,7 +42,7 @@ const sections: Section[] = [
         <Container fluid>
           <Row className="justify-content-md-center">
             <Col sm={12}>
-              <p style={{ padding: '0 10%' }}>
+              <p>
                 The reason I enjoy Software Development is because{' '}
                 <strong>
                   I love to <em>learn</em>
@@ -57,7 +52,7 @@ const sections: Section[] = [
                 circumstances call for different technologies.
               </p>
               <div style={{ height: '20px' }} />
-              <p style={{ padding: '0 10%' }}>
+              <p>
                 The majority of my current programming skills lie in <strong>JavaScript</strong> and{' '}
                 <strong>Python</strong>. I enjoy <strong>React.js</strong> on the front end and{' '}
                 <strong>Node.js</strong> on the back end. I have been using{' '}
@@ -95,58 +90,26 @@ const sections: Section[] = [
   {
     title: 'contact',
     content: (
-      <>
-        <p>
-          <a
-            href="https://twitter.com/MaxwellKrieg?ref_src=twsrc%5Etfw"
-            className="twitter-follow-button"
-            data-show-count="false"
-            data-size="large"
-          >
-            Follow @MaxwellKrieg
-          </a>
-        </p>
-        <p>
-          <GitHubButton
-            href="https://github.com/maxkrieg"
-            data-color-scheme="no-preference: light; light: light; dark: dark;"
-            data-size="large"
-            data-show-count={true}
-            aria-label="Follow @maxkrieg on GitHub"
-          >
-            Follow @maxkrieg
-          </GitHubButton>
-        </p>
-        <p>
-          <a
-            style={{
-              display: 'inlineBlock',
-              backgroundColor: '#FC5200',
-              color: '#fff',
-              padding: '5px 10px 5px 30px',
-              fontSize: '13px',
-              fontFamily: 'Helvetica, Arial, sans-serif',
-              whiteSpace: 'nowrap',
-              textDecoration: 'none',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '10px center',
-              borderRadius: '3px',
-              backgroundImage: "url('http://badges.strava.com/logo-strava-echelon.png')",
-            }}
-            href="http://strava.com/athletes/31447476"
-            target="_clean"
-          >
-            Follow me on
-            <img
-              src="http://badges.strava.com/logo-strava.png"
-              alt="Strava"
-              style={{ marginLeft: '2px', verticalAlign: 'textBottom' }}
-              height={13}
-              width={51}
-            />
-          </a>
-        </p>
-      </>
+      <div style={{ marginTop: '10px' }}>
+        <a
+          href="https://twitter.com/MaxwellKrieg?ref_src=twsrc%5Etfw"
+          className="twitter-follow-button"
+          data-show-count="false"
+          data-size="large"
+        >
+          Follow @MaxwellKrieg
+        </a>
+        <span style={{ width: '10px', display: 'inline-block' }} />
+        <GitHubButton
+          href="https://github.com/maxkrieg"
+          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          data-size="large"
+          data-show-count={true}
+          aria-label="Follow @maxkrieg on GitHub"
+        >
+          Follow @maxkrieg
+        </GitHubButton>
+      </div>
     ),
   },
 ]
