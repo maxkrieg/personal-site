@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container fluid>
+      <Container fluid style={{ padding: 0 }}>
         <Row>
           <Col>
             <Image src={banner} fluid />
