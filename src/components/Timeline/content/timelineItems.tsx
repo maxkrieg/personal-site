@@ -36,10 +36,11 @@ const timelineItems: TimelineItem[] = [
     company: 'Pluralsight',
     team: 'Cloud Environments Platform',
     location: 'Salt Lake City, UT',
-    dates: 'Dec 2019 - Present',
+    dates: 'Jan 2020 - Present',
     descriptionBullets: [
-      'Management of Kubernetes cluster that services other hands-on learner experiences such as Interactive Courses, Labs, and Projects',
-      'Development of service that provides safe and secure execution environments (Docker containers) for learners and authors',
+      'Developed platform to programmatically manage AWS and Azure cloud accounts',
+      'Management of Kubernetes cluster backing hands-on learning experiences',
+      'Led discovery and architecture for Azure lab containers',
       <span>
         <strong>Technologies:</strong> Kubernetes, Docker, Node.js, Typescript, NestJS, GraphQL
       </span>,
@@ -53,9 +54,9 @@ const timelineItems: TimelineItem[] = [
     location: 'Salt Lake City, UT & Boston, MA',
     dates: 'Nov 2018 – Dec 2019',
     descriptionBullets: [
-      'Led technical discovery, architectural design, and creation of new Author experience for Interactive Courses',
-      'Trained team in LEAN practices, optimization for flow efficiency, and mob programming',
-      'Built embeddable "smart" React component for use by other learner experiences',
+      'Led discovery, architectural design, and creation of new course authoring tool',
+      'Developed interactive course content for C#, Golang, and JavaScript courses',
+      'Trained team in LEAN practices, flow efficiency, and mob programming',
       <span>
         <strong>Technologies:</strong> Node.js, React, Apollo GraphQL, Typescript, Docker,
         PostgreSQL
@@ -70,9 +71,9 @@ const timelineItems: TimelineItem[] = [
     location: 'Salt Lake City, UT & Boston, MA',
     dates: 'Jan 2018 – Nov 2018',
     descriptionBullets: [
-      'Led team in rebuild of Skill IQ Author application from legacy codebase',
-      'Architected and built internal dashboard for Skill IQ data analytics',
-      'Transitioned legacy codebase from Python 2 to Python 3',
+      'Led overhaul of legacy application and migration to new stack in React and Python',
+      'Developed library of reusable React components for use by other teams',
+      'Hired and trained 3 engineers for the team',
       <span>
         <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
       </span>,
@@ -81,14 +82,14 @@ const timelineItems: TimelineItem[] = [
   {
     icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
     title: 'Software Engineer, Tech Lead',
-    team: 'Skill IQ Tech Leader Experience',
+    team: 'Skill IQ Manager Experience',
     company: 'Pluralsight',
     location: 'Salt Lake City, UT & Boston, MA',
     dates: 'Feb 2017 – Feb 2018',
     descriptionBullets: [
-      'Created Skill IQ data analytics experience for customers',
       'Delivered 3 premium features than enabled higher price points and increased sales',
-      'Built asynchronous data aggregation and calculation service',
+      'Developed data aggregation and processing pipelines for analytics dashboard',
+      'Hired and trained over 5 new engineers for multiple teams',
       <span>
         <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
       </span>,
@@ -102,9 +103,9 @@ const timelineItems: TimelineItem[] = [
     location: 'Salt Lake City, UT & Boston, MA',
     dates: 'July 2015 – Feb 2017',
     descriptionBullets: [
-      'Led front end development of brand new Skill IQ learner experience in React',
-      'Evolved CI/CD practices and pipelines using a number of tools (Jenkins, Ansible, Puppet, etc)',
-      'Transitioned legacy codebase from Python 2 to Python 3',
+      'Led front end development of Skill IQ learner experience in React',
+      'Enhanced CI/CD practices and pipelines using Jenkins, Ansible, Puppet',
+      'Built Skill IQ management platform for internal use in React and Python',
       <span>
         <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
       </span>,
@@ -132,9 +133,9 @@ const timelineItems: TimelineItem[] = [
     location: 'Boston, MA',
     dates: 'Jan 2015 – Apr 2015',
     descriptionBullets: [
-      'Team leader of 5+ person marketing team to ensure goals of Fortune 500 e-commerce client were met efficiently',
+      'Built automated tools and reports to manage millions of dollars of advertising budget',
       'Designed advertising strategy to optimize for client-specified KPIs',
-      'Primary point of contact for client, helped develop and strengthen client-agency relationship',
+      'Developed and strengthened client relationship as primary point of contact',
     ],
   },
   {

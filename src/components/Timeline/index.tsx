@@ -49,7 +49,9 @@ const Timeline: React.FC = () => {
             {timelineItem.descriptionBullets && (
               <ul className="timeline__element-description">
                 {timelineItem.descriptionBullets.map((bulletText, i) => (
-                  <li key={i}>{bulletText}</li>
+                  <li key={i} style={{ fontSize: '14px' }}>
+                    {bulletText}
+                  </li>
                 ))}
               </ul>
             )}
