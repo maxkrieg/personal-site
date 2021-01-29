@@ -32,7 +32,7 @@ interface TimelineItem {
 const timelineItems: TimelineItem[] = [
   {
     icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Software Engineer',
+    title: 'Senior Software Engineer',
     company: 'Pluralsight',
     team: 'Cloud Environments Platform',
     location: 'Salt Lake City, UT',
@@ -48,7 +48,7 @@ const timelineItems: TimelineItem[] = [
   },
   {
     icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Software Engineer, Tech Lead',
+    title: 'Senior Software Engineer, Tech Lead',
     team: 'Interactive Course Author Experience',
     company: 'Pluralsight',
     location: 'Salt Lake City, UT & Boston, MA',
