@@ -48,7 +48,8 @@ const Portfolio: React.FC = () => {
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
               {repo.name}
             </a>{' '}
-            // {repo.description} // {repo.daysSinceLastChange} days ago
+            // {repo.description} //{' '}
+            {repo.daysSinceLastChange! > 1 ? `${repo.daysSinceLastChange} days ago` : 'yesterday'}
           </li>
         ))}
       </ul>
