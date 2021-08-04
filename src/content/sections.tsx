@@ -25,19 +25,6 @@ const sections: Section[] = [
           have learned to train and grow effective engineering teams. My primary skill set includes
           Node.js, React, Python, and PostgreSQL.
         </p>
-        <p>
-          I believe in{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Lean_software_development"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            lean software development
-          </a>
-          , flow efficiency, and mob programming. Outside of coding, I enjoy hiking, climbing, or
-          skiing. I'm a lifelong learner obsessed with constantly bettering myself in all facets of
-          life.
-        </p>
       </div>
     ),
   },
@@ -61,11 +48,10 @@ const sections: Section[] = [
               <p>
                 My current programming language skills are strongest in <strong>JavaScript</strong>,{' '}
                 <strong>TypeScript</strong> and <strong>Python</strong>. For frameworks, I enjoy{' '}
-                <strong>React.js</strong> on the front end and <strong>Node.js</strong> on the back
-                end.
+                <strong>React</strong> on the front end and <strong>Node.js</strong> on the back
+                end.{' '}
                 <strong>PostgreSQL</strong> has been my database of choice, alongside{' '}
-                <strong>Redis</strong> for caching. I also frequently use <strong>Docker</strong>,{' '}
-                <strong>Kubernetes</strong>, and <strong>AWS</strong>.
+                <strong>Redis</strong> for caching.
               </p>
             </Col>
           </Row>

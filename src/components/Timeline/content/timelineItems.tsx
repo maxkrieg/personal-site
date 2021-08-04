@@ -1,4 +1,5 @@
 import React from 'react'
+import divvyLogo from './logos/divvy-logo.png'
 import psLogo from './logos/ps-logo.png'
 import ipLogo from './logos/ip-logo.png'
 import gniLogo from './logos/gni-logo.png'
@@ -31,7 +32,7 @@ interface TimelineItem {
 
 const timelineItems: TimelineItem[] = [
   {
-    icon: <Icon src={psLogo} url="https://www.getdivvy.com/" />,
+    icon: <Icon src={divvyLogo} url="https://www.getdivvy.com/" />,
     title: 'Software Engineer',
     company: 'Divvy',
     team: 'Partnerships Platform',
