@@ -31,81 +31,49 @@ interface TimelineItem {
 
 const timelineItems: TimelineItem[] = [
   {
-    icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Senior Software Engineer',
-    company: 'Pluralsight',
-    team: 'Cloud Environments Platform',
+    icon: <Icon src={psLogo} url="https://www.getdivvy.com/" />,
+    title: 'Software Engineer',
+    company: 'Divvy',
+    team: 'Partnerships Platform',
     location: 'Salt Lake City, UT',
-    dates: 'Jan 2020 - Present',
+    dates: 'Jan 2021 - Present',
     descriptionBullets: [
-      'Developed platform to programmatically manage AWS and Azure cloud accounts',
-      'Management of Kubernetes cluster backing hands-on learning experiences',
-      'Led discovery and architecture for Azure lab containers',
+      'Primarily focused on front-end development in React of new Partnerships Platform',
+      'Backend development of API in Elixir, using GraphQL and gRPC',
       <span>
-        <strong>Technologies:</strong> Kubernetes, Docker, Node.js, Typescript, NestJS, GraphQL
-      </span>,
-    ],
-  },
-  {
-    icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Senior Software Engineer, Tech Lead',
-    team: 'Interactive Course Author Experience',
-    company: 'Pluralsight',
-    location: 'Salt Lake City, UT & Boston, MA',
-    dates: 'Nov 2018 – Dec 2019',
-    descriptionBullets: [
-      'Led discovery, architectural design, and creation of new course authoring tool',
-      'Developed interactive course content for C#, Golang, and JavaScript courses',
-      'Trained team in LEAN practices, flow efficiency, and mob programming',
-      <span>
-        <strong>Technologies:</strong> Node.js, React, Apollo GraphQL, Typescript, Docker,
-        PostgreSQL
-      </span>,
-    ],
-  },
-  {
-    icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Software Engineer, Tech Lead',
-    team: 'Skill IQ Author Experience',
-    company: 'Pluralsight',
-    location: 'Salt Lake City, UT & Boston, MA',
-    dates: 'Jan 2018 – Nov 2018',
-    descriptionBullets: [
-      'Led overhaul of legacy application and migration to new stack in React and Python',
-      'Developed library of reusable React components for use by other teams',
-      'Hired and trained 3 engineers for the team',
-      <span>
-        <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
-      </span>,
-    ],
-  },
-  {
-    icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
-    title: 'Software Engineer, Tech Lead',
-    team: 'Skill IQ Manager Experience',
-    company: 'Pluralsight',
-    location: 'Salt Lake City, UT & Boston, MA',
-    dates: 'Feb 2017 – Feb 2018',
-    descriptionBullets: [
-      'Delivered 3 premium features than enabled higher price points and increased sales',
-      'Developed data aggregation and processing pipelines for analytics dashboard',
-      'Hired and trained over 5 new engineers for multiple teams',
-      <span>
-        <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
+        <strong>Technologies:</strong> React, TypeScript, GraphQL, Elixir
       </span>,
     ],
   },
   {
     icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
     title: 'Software Engineer',
-    team: 'Skill IQ Learner Experience',
+    team: 'Hands-On Learning Experiences',
     company: 'Pluralsight',
-    location: 'Salt Lake City, UT & Boston, MA',
-    dates: 'July 2015 – Feb 2017',
+    location: 'Boston, MA & Salt Lake City, UT',
+    dates: 'Nov 2018 – Mar 2021 (2 yrs)',
     descriptionBullets: [
-      'Led front end development of Skill IQ learner experience in React',
-      'Enhanced CI/CD practices and pipelines using Jenkins, Ansible, Puppet',
-      'Built Skill IQ management platform for internal use in React and Python',
+      'Built and released Labs player and video publishing tool using React and Node.js',
+      'Developed backend integration service in Node.js to facilitate cloud account vending',
+      'Led technical discovery, architectural design, and creation of new course authoring tool',
+      <span>
+        <strong>Technologies:</strong> React, Typescript, GraphQL, Node.js, Docker, PostgreSQL
+      </span>,
+    ],
+  },
+  {
+    icon: <Icon src={psLogo} url="https://www.pluralsight.com/" />,
+    title: 'Software Engineer',
+    team: 'Skill IQ Experience',
+    company: 'Pluralsight',
+    location: 'Boston, MA',
+    dates: 'July 2015 – Nov 2018 (3.5 yrs)',
+    descriptionBullets: [
+      'Developed and released multiple applications for the Skill IQ product line',
+      'Served as Technical Lead on 2 teams building greenfield applications',
+      'Led overhaul of legacy application to meet new product and security requirements and best practices',
+      'Developed data aggregation and processing pipelines for analytics dashboard',
+      'Enhanced CI/CD practices and pipelines using Jenkins, Ansible, TeamCity, and Docker',
       <span>
         <strong>Technologies:</strong> Python, React, Sqlalchemy, PostgreSQL
       </span>,
@@ -117,7 +85,7 @@ const timelineItems: TimelineItem[] = [
     team: 'Web Development Immersive',
     company: 'General Assembly',
     location: 'Boston, MA',
-    dates: 'Apr 2015 – July 2015',
+    dates: 'Apr 2015 – July 2015 (3 mos)',
     descriptionBullets: [
       '3-month full time immersive course where I learned best practices for web application architecture, front-end and back end development',
       <span>
@@ -128,38 +96,14 @@ const timelineItems: TimelineItem[] = [
   },
   {
     icon: <Icon src={ipLogo} url="https://www.iprospect.com/en/us/" />,
-    title: 'Search Engine Marketing Account Lead',
+    title: 'Search Engine Marketing Account Coordinator, Specialist, Lead',
     company: 'iProspect',
     location: 'Boston, MA',
-    dates: 'Jan 2015 – Apr 2015',
+    dates: 'Jun 2013 – Apr 2015 (2 yrs)',
     descriptionBullets: [
-      'Built automated tools and reports to manage millions of dollars of advertising budget',
-      'Designed advertising strategy to optimize for client-specified KPIs',
-      'Developed and strengthened client relationship as primary point of contact',
-    ],
-  },
-  {
-    icon: <Icon src={ipLogo} url="https://www.iprospect.com/en/us/" />,
-    title: 'Search Engine Marketing Account Specialist',
-    company: 'iProspect',
-    location: 'Boston, MA',
-    dates: 'May 2014 – Dec 2014',
-    descriptionBullets: [
+      'Planned and executed Search Engine Marketing campaigns for agency clients',
       'Automated data analysis reporting for 5 teams with VBA scripts, saving over 10 person hrs/wk',
-      'Managed multi-million dollar ad budget by developing spend projection tool in Excel',
-      'Redesigned strategy for a Product Listing Account, leading to +20% ROI YoY',
-    ],
-  },
-  {
-    icon: <Icon src={ipLogo} url="https://www.iprospect.com/en/us/" />,
-    title: 'Search Engine Marketing Account Coordinator',
-    company: 'iProspect',
-    location: 'Boston, MA',
-    dates: 'Jun 2013 – Apr 2014',
-    descriptionBullets: [
-      'Optimized ad campaigns by doing analysis of search keyword metrics (impressions, click through rate, conversion rate)',
-      'Led execution for Holiday marketing campaigns, driving YoY ROI increases in multiple ad types',
-      'Executed all client reporting of ad campaign performance and tracking against KPIs',
+      'Built spend projection & optimization tool in Excel to manage multi-million dollar/yr ad spend',
     ],
   },
   {
@@ -169,7 +113,7 @@ const timelineItems: TimelineItem[] = [
     title: 'Data Analyst',
     company: 'Global News Intelligence (GNI)',
     location: 'Boston, MA',
-    dates: 'May 2011 – Jun 2013',
+    dates: 'May 2011 – Jun 2013 (2 yrs)',
     descriptionBullets: [
       'Data analyst and consultant of open-source media content for corporate, political, and military clients',
       'Designed analytics strategy and methodology for multiple client projects',
@@ -185,7 +129,6 @@ const timelineItems: TimelineItem[] = [
     location: 'Burlington, VT',
     dates: 'Graduated Dec 2010',
     descriptionBullets: [
-      "Interdisciplinary degree covering relationship between global politics, economics, and culture in influencing today's world",
       'Founder of UVM Global Studies club',
       'Opinion Columnist for The Vermont Cynic newspaper',
       "Teacher's Assistant for Anthropology Department",
@@ -215,7 +158,6 @@ const timelineItems: TimelineItem[] = [
       "3-month semester long program in southern Chile's Patagonia wilderness region consisting of backpacking and sea kayaking",
       'Trained in large-group, extended backcountry expedition planning and leadership',
       'Led group of 21 for multiple days of mountain travel and sea kayaking',
-      'Certification in Wilderness First Aid (WFA) and Leave No Trace (LNT)',
     ],
   },
 ]
