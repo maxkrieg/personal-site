@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e977d17ddce49f63b2e7c0e06865bd1",
+    "revision": "843b126521073539be4cf9f81122eb03",
     "url": "/index.html"
   },
   {
-    "revision": "9ef9b5ee687c5b043f77",
+    "revision": "0b7361a952ef6c1de925",
     "url": "/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "64f0005ebbc97bac4b7b",
+    "revision": "f7f194cb4df9d24c5a8c",
     "url": "/static/css/main.3f833ae2.chunk.css"
   },
   {
-    "revision": "9ef9b5ee687c5b043f77",
-    "url": "/static/js/2.a17c699a.chunk.js"
+    "revision": "0b7361a952ef6c1de925",
+    "url": "/static/js/2.75b3be16.chunk.js"
   },
   {
     "revision": "2597ef821004603d17ea37bfd5dfeb97",
-    "url": "/static/js/2.a17c699a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.75b3be16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64f0005ebbc97bac4b7b",
-    "url": "/static/js/main.2434c9f4.chunk.js"
+    "revision": "f7f194cb4df9d24c5a8c",
+    "url": "/static/js/main.1bb89cd9.chunk.js"
   },
   {
     "revision": "766df7dbb5392e1314ed",
     "url": "/static/js/runtime-main.9c9c41ef.js"
+  },
+  {
+    "revision": "cb736123bbf57ca4d2712c7ddbfe5b4e",
+    "url": "/static/media/divvy-logo.cb736123.png"
   },
   {
     "revision": "06355a4afb38cc851e4f15f96e96fddd",
