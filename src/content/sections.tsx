@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import GitHubButton from 'react-github-btn'
 
 import SkillChart from '../components/SkillChart'
-import Timeline from '../components/Timeline'
+// import Timeline from '../components/Timeline'
 import Portfolio from '../components/Portfolio'
 import maxRowanPhoto from './max-rowan.jpg'
 
@@ -61,10 +61,10 @@ const sections: Section[] = [
       </div>
     ),
   },
-  {
-    title: 'timeline',
-    content: <Timeline />,
-  },
+  // {
+  //   title: 'timeline',
+  //   content: <Timeline />,
+  // },
   {
     title: 'portfolio',
     content: <Portfolio />,
