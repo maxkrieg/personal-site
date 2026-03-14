@@ -22,11 +22,11 @@ const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     name: 'Data Stores',
-    skills: ['PostgreSQL', 'Redis', 'MongoDB', 'RabbitMQ'],
+    skills: ['PostgreSQL', 'Redis', 'MongoDB', 'RabbitMQ', 'Kafka'],
   },
   {
     name: 'AI & Workflows',
-    skills: ['LLM Integration', 'Agentic Workflows', 'Chat Applications', 'RAG Pipelines'],
+    skills: ['LLM Integration', 'Agentic Workflows', 'Chat Applications', 'n8n', 'Vercel AI SDK'],
   },
 ]
 
