@@ -1,0 +1,30 @@
+.site-navbar {
+  background-color: rgba(13, 17, 23, 0.92) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(88, 166, 255, 0.15);
+  padding: 0.6rem 1.5rem;
+}
+
+.navbar-brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #e6edf3 !important;
+}
+
+.navbar-section-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b949e !important;
+  transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-section-link:hover {
+  color: #58a6ff !important;
+}

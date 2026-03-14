@@ -1,4 +1,109 @@
+/* ── Base ─────────────────────────────────────────────────── */
+body {
+  background-color: #0d1117;
+  color: #cdd9e5;
+}
+
+/* ── Banner ───────────────────────────────────────────────── */
+.banner-row {
+  position: relative;
+}
+
+.banner-overlay {
+  position: relative;
+  overflow: hidden;
+  max-height: 520px;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+  filter: brightness(0.45);
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.banner-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.banner-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.85rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  color: #58a6ff;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* ── Sections ─────────────────────────────────────────────── */
+.section-dark {
+  background-color: #161b22;
+}
+
+.section-darker {
+  background-color: #0d1117;
+}
+
 .home_section-container {
   text-align: center;
   padding: 5% 5%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8b949e;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #58a6ff;
+  margin: 0 auto 2rem;
+}
+
+p {
+  color: #adbac7;
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+strong {
+  color: #e6edf3;
+}
+
+/* ── Scroll reveal animations ─────────────────────────────── */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
