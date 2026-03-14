@@ -2,22 +2,22 @@ import React from 'react'
 import { Nav, Navbar as NavbarRB } from 'react-bootstrap'
 
 import sections from '../../content/sections'
+import './index.css'
 
 const Navbar: React.FC = () => {
   return (
     <NavbarRB
       expand="sm"
       sticky="top"
-      bg="light"
-      variant="light"
-      style={{ boxShadow: '0 2px 10px 0px #777' }}
+      variant="dark"
+      className="site-navbar"
     >
+      <NavbarRB.Brand as="span" className="navbar-brand-name">MAX KRIEG</NavbarRB.Brand>
       <NavbarRB.Toggle aria-controls="basic-navbar-nav" />
-      <NavbarRB.Brand as="span">MAX KRIEG</NavbarRB.Brand>
       <NavbarRB.Collapse>
-        <Nav>
+        <Nav className="ml-auto">
           {sections.map(({ title }) => (
-            <Nav.Link key={title} href={`//${window.location.host}#${title}`}>
+            <Nav.Link key={title} href={`//${window.location.host}#${title}`} className="navbar-section-link">
               {title}
             </Nav.Link>
           ))}

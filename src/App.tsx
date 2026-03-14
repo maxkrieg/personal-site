@@ -4,19 +4,25 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import sections from './content/sections'
 import banner from './content/zion-background.jpg'
 import Navbar from './components/Navbar'
+import useScrollReveal from './utils/useScrollReveal'
 import './App.css'
 
-const LIGHT_BG = '#F1F2F4'
-const DARK_BG = '#E2E6E9'
-
 function App() {
+  useScrollReveal()
+
   return (
     <>
       <Navbar />
       <Container fluid style={{ padding: 0 }}>
-        <Row>
+        <Row noGutters className="banner-row">
           <Col>
-            <Image src={banner} fluid />
+            <div className="banner-overlay">
+              <Image src={banner} fluid className="banner-image" />
+              <div className="banner-text">
+                <h1 className="banner-name">MAX KRIEG</h1>
+                <p className="banner-title">Staff Software Engineer</p>
+              </div>
+            </div>
           </Col>
         </Row>
         {sections.map(({ title, content }, i) => (
@@ -24,12 +30,13 @@ function App() {
             noGutters
             id={title}
             key={title}
-            style={i % 2 === 0 ? { backgroundColor: DARK_BG } : { backgroundColor: LIGHT_BG }}
+            className={`section-row ${i % 2 === 0 ? 'section-dark' : 'section-darker'}`}
           >
             <Container fluid className="home_section-container">
               <Row noGutters className="justify-content-md-center">
-                <Col xs={12} sm={12}>
-                  <h2>{title}</h2>
+                <Col xs={12} sm={12} className="reveal-on-scroll">
+                  <h2 className="section-title">{title}</h2>
+                  <div className="section-divider" />
                   {content}
                 </Col>
               </Row>

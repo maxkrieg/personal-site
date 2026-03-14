@@ -2,8 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import GitHubButton from 'react-github-btn'
 
-import SkillChart from '../components/SkillChart'
-// import Timeline from '../components/Timeline'
+import SkillList from '../components/SkillList'
 import Portfolio from '../components/Portfolio'
 import maxRowanPhoto from './max-rowan.jpg'
 
@@ -20,10 +19,14 @@ const sections: Section[] = [
         <Image src={maxRowanPhoto} roundedCircle style={{ height: '20%', width: '20%' }} fluid />
         <div style={{ height: '16px' }} />
         <p>
-          I'm a passionate Software Engineer with experience working on full-stack web applications
-          and platforms in the SaaS industry. I've been a technical lead on numerous teams where I
-          have learned to train and grow effective engineering teams. My primary skill set includes
-          Node.js, React, Python, and PostgreSQL.
+          I'm a Staff Software Engineer with deep experience architecting and scaling full-stack web
+          applications and platforms in the SaaS industry. I've led cross-functional engineering
+          teams, shaped technical strategy, and driven high-impact initiatives across product areas.
+          My core stack includes <strong>Node.js</strong>, <strong>React</strong>,{' '}
+          <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Python</strong>,{' '}
+          <strong>Elixir</strong>, and <strong>PostgreSQL</strong>. I'm passionate about building{' '}
+          <strong>agentic workflows</strong> and AI-powered features — including conversational chat
+          applications — that meaningfully improve how people work.
         </p>
       </div>
     ),
@@ -36,35 +39,20 @@ const sections: Section[] = [
           <Row className="justify-content-md-center">
             <Col sm={12}>
               <p>
-                The reason I enjoy Software Development is because{' '}
-                <strong>
-                  I love to <em>learn</em>
-                </strong>
-                . I enjoy challenging myself by skilling up in new areas. I believe there is no "one
-                size fits all" when it comes to a tech stack and that different circumstances call
-                for different technologies.
-              </p>
-              <div style={{ height: '20px' }} />
-              <p>
-                My current programming language skills are strongest in <strong>JavaScript</strong>,{' '}
-                <strong>TypeScript</strong> and <strong>Python</strong>. For frameworks, I enjoy{' '}
-                <strong>React</strong> on the front end and <strong>Node.js</strong> on the back
-                end.{' '}
-                <strong>PostgreSQL</strong> has been my database of choice, alongside{' '}
-                <strong>Redis</strong> for caching.
+                I believe the best engineers are relentless learners. There is no "one size fits
+                all" tech stack — the right tool depends on the problem. I thrive at the
+                intersection of technical depth and team leadership, and I'm especially energized by
+                the emerging space of <strong>AI-powered applications</strong> and{' '}
+                <strong>agentic systems</strong>.
               </p>
             </Col>
           </Row>
         </Container>
         <div style={{ height: '30px' }} />
-        <SkillChart />
+        <SkillList />
       </div>
     ),
   },
-  // {
-  //   title: 'timeline',
-  //   content: <Timeline />,
-  // },
   {
     title: 'portfolio',
     content: <Portfolio />,
@@ -84,7 +72,7 @@ const sections: Section[] = [
         <span style={{ width: '10px', display: 'inline-block' }} />
         <GitHubButton
           href="https://github.com/maxkrieg"
-          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
           data-size="large"
           data-show-count={true}
           aria-label="Follow @maxkrieg on GitHub"
