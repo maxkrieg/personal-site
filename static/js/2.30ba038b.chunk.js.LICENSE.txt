@@ -16,8 +16,6 @@ object-assign
  * @license BSD-2-Clause
  */
 
-/*! decimal.js-light v2.5.0 https://github.com/MikeMcl/decimal.js-light/LICENCE */
-
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
