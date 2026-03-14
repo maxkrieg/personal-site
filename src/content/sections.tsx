@@ -62,12 +62,12 @@ const sections: Section[] = [
     content: (
       <div style={{ marginTop: '10px' }}>
         <a
-          href="https://twitter.com/MaxwellKrieg?ref_src=twsrc%5Etfw"
-          className="twitter-follow-button"
-          data-show-count="false"
-          data-size="large"
+          href="https://www.linkedin.com/in/maxkrieg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linkedin-link"
         >
-          Follow @MaxwellKrieg
+          LinkedIn — Max Krieg
         </a>
         <span style={{ width: '10px', display: 'inline-block' }} />
         <GitHubButton

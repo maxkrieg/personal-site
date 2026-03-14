@@ -1,8 +1,7 @@
 import React from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import sections from './content/sections'
-import banner from './content/zion-background.jpg'
 import Navbar from './components/Navbar'
 import useScrollReveal from './utils/useScrollReveal'
 import './App.css'
@@ -16,12 +15,9 @@ function App() {
       <Container fluid style={{ padding: 0 }}>
         <Row noGutters className="banner-row">
           <Col>
-            <div className="banner-overlay">
-              <Image src={banner} fluid className="banner-image" />
-              <div className="banner-text">
-                <h1 className="banner-name">MAX KRIEG</h1>
-                <p className="banner-title">Staff Software Engineer</p>
-              </div>
+            <div className="banner-hero">
+              <h1 className="banner-name">MAX KRIEG</h1>
+              <p className="banner-title">Staff Software Engineer</p>
             </div>
           </Col>
         </Row>
