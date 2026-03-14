@@ -33,7 +33,14 @@
   background-color: rgba(88, 166, 255, 0.1);
   color: #cdd9e5;
   border: 1px solid rgba(88, 166, 255, 0.25);
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-tag--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-tag:hover {

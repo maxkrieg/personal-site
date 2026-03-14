@@ -23,8 +23,33 @@
   color: #8b949e !important;
   transition: color 0.2s ease;
   padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.navbar-section-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background-color: #58a6ff;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
 }
 
 .navbar-section-link:hover {
   color: #58a6ff !important;
+}
+
+.navbar-section-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-section-link--active {
+  color: #58a6ff !important;
+}
+
+.navbar-section-link--active::after {
+  transform: scaleX(1);
 }
