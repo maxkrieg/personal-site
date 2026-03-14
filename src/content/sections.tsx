@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import GitHubButton from 'react-github-btn'
 
 import SkillList from '../components/SkillList'
 import Portfolio from '../components/Portfolio'
@@ -70,15 +69,14 @@ const sections: Section[] = [
           LinkedIn — Max Krieg
         </a>
         <span style={{ width: '10px', display: 'inline-block' }} />
-        <GitHubButton
+        <a
           href="https://github.com/maxkrieg"
-          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-          data-size="large"
-          data-show-count={true}
-          aria-label="Follow @maxkrieg on GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linkedin-link"
         >
-          Follow @maxkrieg
-        </GitHubButton>
+          GitHub — @maxkrieg
+        </a>
       </div>
     ),
   },
