@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
+
 import sections from './content/sections'
 import Navbar from './components/Navbar'
 import ParticleHero from './components/ParticleHero'
@@ -12,6 +18,20 @@ function App() {
 
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
   const [spotlightActive, setSpotlightActive] = useState(false)
+
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement).closest('a')
+      if (!anchor || !window.gtag) return
+      window.gtag('event', 'link_click', {
+        link_url: anchor.href,
+        link_text: anchor.textContent?.trim() || anchor.getAttribute('aria-label') || '',
+        outbound: anchor.hostname !== window.location.hostname,
+      })
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [])
 
   useEffect(() => {
     const onMove = (e: MouseEvent) => {
