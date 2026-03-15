@@ -39,7 +39,7 @@ function App() {
       />
       <Navbar />
       <Container fluid style={{ padding: 0 }}>
-        <Row noGutters className="banner-row">
+        <Row className="banner-row g-0">
           <Col>
             <div className="banner-hero">
               <ParticleHero />
@@ -58,7 +58,7 @@ function App() {
             className={`section-row ${i % 2 === 0 ? 'section-dark' : 'section-darker'}`}
           >
             <Container fluid className="home_section-container">
-              <Row noGutters className="justify-content-md-center">
+              <Row className="justify-content-md-center g-0">
                 <Col xs={12} sm={12} className="reveal-on-scroll">
                   <h2 className="section-title">{title}</h2>
                   <div className="section-divider" />
