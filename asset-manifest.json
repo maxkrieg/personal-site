@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c0cfeedc.css",
-    "main.js": "/static/js/main.670923b6.js",
+    "main.js": "/static/js/main.194ddfd6.js",
     "static/media/max-rowan.jpg": "/static/media/max-rowan.7fe7c85244fa9b5a70aa.jpg",
     "index.html": "/index.html",
     "main.c0cfeedc.css.map": "/static/css/main.c0cfeedc.css.map",
-    "main.670923b6.js.map": "/static/js/main.670923b6.js.map"
+    "main.194ddfd6.js.map": "/static/js/main.194ddfd6.js.map"
   },
   "entrypoints": [
     "static/css/main.c0cfeedc.css",
-    "static/js/main.670923b6.js"
+    "static/js/main.194ddfd6.js"
   ]
 }
