@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void
-  }
-}
-
 import sections from './content/sections'
 import Navbar from './components/Navbar'
 import ParticleHero from './components/ParticleHero'
 import useScrollReveal from './utils/useScrollReveal'
 import './App.css'
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
 
 function App() {
   useScrollReveal()
