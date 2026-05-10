@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 
 import SkillList from '../components/SkillList'
 import Portfolio from '../components/Portfolio'
-import maxRowanPhoto from './max-rowan.jpg'
+import maxHeadshotPhoto from './max-headshot.jpg'
 
 interface Section {
   title: string
@@ -15,7 +15,7 @@ const sections: Section[] = [
     title: 'about me',
     content: (
       <div>
-        <Image src={maxRowanPhoto} roundedCircle style={{ height: '20%', width: '20%' }} fluid />
+        <Image src={maxHeadshotPhoto} roundedCircle style={{ height: '20%', width: '20%' }} fluid />
         <div style={{ height: '16px' }} />
         <p>
           I'm a Staff Software Engineer with deep experience architecting and scaling full-stack web
