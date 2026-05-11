@@ -1,3 +1,106 @@
+.featured-card {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background-color: #161b22;
+  border: 1px solid rgba(88, 166, 255, 0.35);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  box-shadow: 0 0 24px rgba(88, 166, 255, 0.08);
+  text-align: left;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+  border-color: rgba(88, 166, 255, 0.55);
+  box-shadow: 0 0 28px rgba(88, 166, 255, 0.13);
+}
+
+.featured-card__badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-card__live-dot {
+  font-size: 0.45rem;
+  color: #3fb950;
+}
+
+.featured-card__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.featured-card__title:hover {
+  text-decoration: underline;
+  color: #58a6ff;
+}
+
+.featured-card__description {
+  font-size: 0.87rem;
+  color: #adbac7;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.featured-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.featured-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.featured-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.12);
+  border: 1px solid rgba(88, 166, 255, 0.4);
+  border-radius: 6px;
+  padding: 0.35rem 0.85rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.featured-card__cta:hover {
+  background-color: rgba(88, 166, 255, 0.22);
+  border-color: rgba(88, 166, 255, 0.65);
+  color: #58a6ff;
+}
+
+.featured-card__repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: #8b949e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.featured-card__repo-link:hover {
+  color: #cdd9e5;
+}
+
 .repo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

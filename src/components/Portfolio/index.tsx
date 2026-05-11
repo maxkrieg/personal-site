@@ -43,6 +43,15 @@ function formatTimeAgo(days: number): string {
   return `${Math.round(days / 365)}y ago`
 }
 
+const FEATURED_PROJECT = {
+  name: 'BidBoard',
+  description:
+    'A full-stack app for managing contractor bids on a project — compare quotes side-by-side, get AI-powered analysis and recommendations, and collaborate with co-stakeholders all in one place.',
+  url: 'https://bidboard.maxkrieg.com',
+  repoUrl: 'https://github.com/maxkrieg/bidboard',
+  tags: ['Next.js', 'React', 'TypeScript'],
+}
+
 const Portfolio: React.FC = () => {
   const [repos, setRepos] = useState<Repository[]>([])
 
@@ -57,7 +66,7 @@ const Portfolio: React.FC = () => {
         const bDate = new Date(repoB.pushed_at)
         return bDate.getTime() - aDate.getTime()
       })
-      const reposToDisplay = data.slice(0, 8)
+      const reposToDisplay = data.filter((r) => r.name !== 'bidboard').slice(0, 6)
       const today = new Date()
       reposToDisplay.forEach((repo) => {
         const diffTime = Math.abs(today.getTime() - new Date(repo.pushed_at).getTime())
@@ -78,6 +87,45 @@ const Portfolio: React.FC = () => {
         </a>{' '}
         for all of my code.
       </p>
+      <div className="featured-card">
+        <div className="featured-card__badge">
+          <i className="fas fa-circle featured-card__live-dot" /> Live App
+        </div>
+        <a
+          href={FEATURED_PROJECT.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="featured-card__title"
+        >
+          {FEATURED_PROJECT.name}
+        </a>
+        <p className="featured-card__description">{FEATURED_PROJECT.description}</p>
+        <div className="featured-card__tags">
+          {FEATURED_PROJECT.tags.map((tag) => (
+            <span key={tag} className="repo-card__topic">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className="featured-card__actions">
+          <a
+            href={FEATURED_PROJECT.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="featured-card__cta"
+          >
+            Visit App <i className="fas fa-arrow-right" />
+          </a>
+          <a
+            href={FEATURED_PROJECT.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="featured-card__repo-link"
+          >
+            <i className="fab fa-github" /> View Repo
+          </a>
+        </div>
+      </div>
       <div className="repo-grid">
         {repos.map((repo: Repository) => (
           <div key={repo.name} className={`repo-card${repo.archived ? ' repo-card--archived' : ''}`}>
