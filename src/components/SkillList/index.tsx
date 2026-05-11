@@ -14,19 +14,19 @@ const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     name: 'Front End',
-    skills: ['React', 'Next.js', 'Apollo', 'webpack', 'jest'],
+    skills: ['React', 'Next.js', 'Apollo', 'HTML/CSS/SCSS'],
   },
   {
     name: 'Back End',
-    skills: ['Node.js', 'Express.js', 'GraphQL', 'Flask', 'Elixir / Phoenix'],
+    skills: ['Node.js', 'NestJS', 'Express.js', 'GraphQL', 'Elixir / Phoenix', 'Kafka'],
   },
   {
-    name: 'Data Stores',
-    skills: ['PostgreSQL', 'Redis', 'MongoDB', 'RabbitMQ', 'Kafka'],
+    name: 'Data & Infrastructure',
+    skills: ['PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'AWS'],
   },
   {
     name: 'AI & Workflows',
-    skills: ['LLM Integration', 'Agentic Workflows', 'Chat Applications', 'n8n', 'Vercel AI SDK'],
+    skills: ['LLM Integration', 'Multi-Agent Systems', 'MCP (Model Context Protocol)', 'n8n', 'Chat Applications'],
   },
 ]
 

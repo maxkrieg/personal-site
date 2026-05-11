@@ -18,14 +18,14 @@ const sections: Section[] = [
         <Image src={maxHeadshotPhoto} roundedCircle style={{ height: '20%', width: '20%' }} fluid />
         <div style={{ height: '16px' }} />
         <p>
-          I'm a Staff Software Engineer with deep experience architecting and scaling full-stack web
-          applications and platforms in the SaaS industry. I've led cross-functional engineering
+          I'm a Staff Software Engineer with 10+ years of experience building SaaS products in{' '}
+          <strong>fintech</strong> and <strong>edtech</strong>. I've led cross-functional engineering
           teams, shaped technical strategy, and driven high-impact initiatives across product areas.
           My core stack includes <strong>Node.js</strong>, <strong>React</strong>,{' '}
           <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Python</strong>,{' '}
-          <strong>Elixir</strong>, and <strong>PostgreSQL</strong>. I'm passionate about building{' '}
-          <strong>agentic workflows</strong> and AI-powered features — including conversational chat
-          applications — that meaningfully improve how people work.
+          <strong>Elixir</strong>, and <strong>PostgreSQL</strong>. I'm currently focused on{' '}
+          <strong>LLM-powered multi-agent systems</strong> and agentic workflows — including a
+          production chat agent — that meaningfully improve how people work.
         </p>
       </div>
     ),
