@@ -47,7 +47,6 @@ const FEATURED_PROJECT = {
   name: 'BidBoard',
   description:
     'A full-stack app for managing contractor bids on a project — compare quotes side-by-side, get AI-powered analysis and recommendations, and collaborate with co-stakeholders all in one place.',
-  url: 'https://bidboard.maxkrieg.com',
   repoUrl: 'https://github.com/maxkrieg/bidboard',
   tags: ['Next.js', 'React', 'TypeScript'],
 }
@@ -89,16 +88,9 @@ const Portfolio: React.FC = () => {
       </p>
       <div className="featured-card">
         <div className="featured-card__badge">
-          <i className="fas fa-circle featured-card__live-dot" /> Live App
+          <i className="fas fa-star featured-card__live-dot" /> Featured Project
         </div>
-        <a
-          href={FEATURED_PROJECT.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="featured-card__title"
-        >
-          {FEATURED_PROJECT.name}
-        </a>
+        <span className="featured-card__title">{FEATURED_PROJECT.name}</span>
         <p className="featured-card__description">{FEATURED_PROJECT.description}</p>
         <div className="featured-card__tags">
           {FEATURED_PROJECT.tags.map((tag) => (
@@ -108,14 +100,6 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
         <div className="featured-card__actions">
-          <a
-            href={FEATURED_PROJECT.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="featured-card__cta"
-          >
-            Visit App <i className="fas fa-arrow-right" />
-          </a>
           <a
             href={FEATURED_PROJECT.repoUrl}
             target="_blank"
