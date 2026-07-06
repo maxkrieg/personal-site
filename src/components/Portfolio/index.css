@@ -29,20 +29,14 @@
 }
 
 .featured-card__live-dot {
-  font-size: 0.45rem;
-  color: #3fb950;
+  font-size: 0.65rem;
+  color: #d29922;
 }
 
 .featured-card__title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #58a6ff;
-  text-decoration: none;
-}
-
-.featured-card__title:hover {
-  text-decoration: underline;
   color: #58a6ff;
 }
 
