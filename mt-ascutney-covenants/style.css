@@ -31,9 +31,10 @@ b,strong{font-weight:700}
 /* Hero */
 .hero{background:radial-gradient(120% 90% at 85% 0%, color-mix(in srgb, var(--spruce-mid) 45%, var(--spruce)) 0%, var(--spruce) 55%, var(--spruce-deep) 100%);color:var(--spruce-ink)}
 .hero .inner{padding-block:44px 8px;display:grid;gap:18px}
+@media (max-width:560px){.hero .inner{padding-block:28px 4px;gap:14px}}
 .doc-name{font-family:var(--display);font-weight:700;font-size:clamp(1.15rem,2.8vw,1.4rem);line-height:1.2;color:var(--ember)}
 .hero h1{font-size:clamp(2.1rem,6.4vw,3.2rem);letter-spacing:-.012em;max-width:19ch}
-.hero .dek{font-size:1.1em;max-width:44ch;color:color-mix(in srgb, var(--spruce-ink) 92%, transparent)}
+.hero .dek{font-size:1.1em;line-height:1.45;max-width:44ch;color:color-mix(in srgb, var(--spruce-ink) 92%, transparent)}
 .byline{font-size:.86rem;color:color-mix(in srgb, var(--spruce-ink) 78%, transparent)}
 .hero.sub .inner{padding-block:36px 4px}
 .hero.sub h1{font-size:clamp(1.9rem,5.4vw,2.6rem)}
@@ -181,8 +182,7 @@ footer strong{color:var(--ink)}
 }
 
 /* Link to the scanned 1984 document */
-.doc-link{justify-self:start;display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 10px;min-height:52px;padding:10px 22px;border-radius:999px;background:var(--ember);color:var(--spruce-deep);font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
-.doc-link .ico{width:22px;height:22px}
-.doc-link span{font-weight:400;font-size:.86em}
+.doc-link{justify-self:start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 18px;border-radius:999px;background:var(--ember);color:var(--spruce-deep);font-size:.88em;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+.doc-link .ico{width:18px;height:18px}
 .doc-link:hover{background:#f9d4bb}
 .quote cite a{color:inherit;text-underline-offset:2px}
