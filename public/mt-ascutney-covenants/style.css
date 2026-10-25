@@ -186,3 +186,11 @@ footer strong{color:var(--ink)}
 .doc-link .ico{width:18px;height:18px}
 .doc-link:hover{background:#f9d4bb}
 .quote cite a{color:inherit;text-underline-offset:2px}
+
+/* Ways into the details page from the main page */
+.more-card{margin-top:14px;background:var(--spruce-soft);border-radius:18px;padding:20px 22px;display:grid;gap:14px}
+.more-card p{color:var(--muted)}
+.more-card b{display:block;font-family:var(--display);font-size:1.2em;line-height:1.25;color:var(--ink);margin-bottom:2px}
+.btn-solid{justify-self:start;display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border-radius:999px;background:var(--spruce-mid);color:#fff;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+.btn-solid:hover{background:var(--spruce)}
+.toc.toc-end{margin-top:0;box-shadow:var(--shadow)}
