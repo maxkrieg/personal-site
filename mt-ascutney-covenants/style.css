@@ -179,3 +179,10 @@ footer strong{color:var(--ink)}
   .stewards div{background:#fff;color:#000;border:1px solid #ccc}.stewards b{color:#000}.stewards span{color:#333}
   a{color:#000}
 }
+
+/* Link to the scanned 1984 document */
+.doc-link{justify-self:start;display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 10px;min-height:52px;padding:10px 22px;border-radius:999px;background:var(--ember);color:var(--spruce-deep);font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+.doc-link .ico{width:22px;height:22px}
+.doc-link span{font-weight:400;font-size:.86em}
+.doc-link:hover{background:#f9d4bb}
+.quote cite a{color:inherit;text-underline-offset:2px}
