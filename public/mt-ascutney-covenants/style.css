@@ -194,3 +194,23 @@ footer strong{color:var(--ink)}
 .btn-solid{justify-self:start;display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border-radius:999px;background:var(--spruce-mid);color:#fff;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
 .btn-solid:hover{background:var(--spruce)}
 .toc.toc-end{margin-top:0;box-shadow:var(--shadow)}
+
+/* Email signup: the closing ask, in the hero's spruce so it reads as the end of the page */
+.band.signup{background:linear-gradient(160deg, var(--spruce) 0%, var(--spruce-deep) 100%);color:var(--spruce-ink)}
+.signup .intro{color:color-mix(in srgb, var(--spruce-ink) 88%, transparent)}
+.signup-form{display:grid;gap:10px;max-width:560px}
+.signup-form > label{font-weight:700;font-size:.92em}
+.signup-row{display:flex;gap:10px}
+.signup-row input{flex:1;min-width:0;min-height:52px;padding:10px 20px;border:2px solid transparent;border-radius:999px;background:var(--surface);color:var(--ink);font:inherit}
+.signup-row input::placeholder{color:#6b7872}
+.btn-ember{flex:none;min-height:52px;padding:10px 24px;border:0;border-radius:999px;background:var(--ember);color:var(--spruce-deep);font:inherit;font-weight:700;cursor:pointer}
+.btn-ember:hover{background:#f9d4bb}
+.btn-ember:disabled{opacity:.7;cursor:default}
+.signup input:focus-visible,.signup button:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+.signup .fine{font-size:.84em;color:color-mix(in srgb, var(--spruce-ink) 78%, transparent)}
+.signup-status{font-weight:700;color:var(--ember)}
+.signup-status:empty{display:none}
+.signup-form.done > label,.signup-form.done .signup-row,.signup-form.done .fine{display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:560px){.signup-row{flex-direction:column}.btn-ember{width:100%}}
+@media print{.signup{display:none}}
