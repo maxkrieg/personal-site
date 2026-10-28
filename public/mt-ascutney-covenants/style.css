@@ -112,7 +112,7 @@ b,strong{font-weight:700}
 .pill{justify-self:start;display:inline-block;font-size:.8em;font-weight:700;border-radius:999px;padding:3px 12px}
 .pill.strong{background:var(--spruce-mid);color:var(--surface)}
 .pill.open{background:var(--spruce-soft);color:var(--spruce-mid)}
-.pill.check{background:var(--gold-soft);color:var(--gold)}
+.pill.unconfirmed{background:var(--gold-soft);color:var(--gold)}
 
 .points{list-style:none;padding:0;display:grid;gap:14px}
 .point{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:18px 22px;display:grid;gap:8px;scroll-margin-top:16px}
