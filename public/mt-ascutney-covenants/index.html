@@ -223,6 +223,25 @@
   </div>
 </section>
 
+<section class="band signup" id="signup" aria-labelledby="h-signup">
+  <div class="inner">
+    <h2 id="h-signup">Help end the covenants</h2>
+    <p class="intro">Getting rid of them will take neighbors working together. Leave your email and I'll send updates as this moves forward: what an attorney finds, when neighbors meet, and what you can do to help.</p>
+    <form class="signup-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd5qyY0ifqAKrskMhbdTnaFht10So52r6KBhd9cbaHvg-uPHw/formResponse" method="post">
+      <label for="signup-name">Your name <span class="opt">(optional)</span></label>
+      <input id="signup-name" class="signup-input" type="text" name="entry.44939394" autocomplete="name">
+      <label for="signup-email">Your email</label>
+      <div class="signup-row">
+        <input id="signup-email" class="signup-input" type="email" name="entry.1500431126" autocomplete="email" required placeholder="you@example.com">
+        <button class="btn-ember" type="submit">Keep me posted</button>
+      </div>
+      <div class="hp" aria-hidden="true"><label for="signup-hp">Leave this empty</label><input id="signup-hp" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="fine">Only used for updates about the covenants. Never shared. Reply to any update to be taken off the list.</p>
+      <p class="signup-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <footer>
   <div class="inner">
     <p><strong>This is not legal advice.</strong> It's based on the recorded covenants, owner documents, public records, and news reporting.</p>
@@ -230,5 +249,34 @@
     <button class="btn" type="button" onclick="window.print()"><svg class="ico" aria-hidden="true"><use href="#i-print"/></svg>Print this page</button>
   </div>
 </footer>
+<script>
+  // Responses go to a Google Form, which saves them to a Google Sheet.
+  // Without JS the form posts there and shows Google's "response recorded" page; with JS it stays here.
+  // Google doesn't allow cross-origin reads, so the response is opaque: a request that went through counts as sent.
+  (function(){
+    var form = document.querySelector('.signup-form');
+    var status = form.querySelector('.signup-status');
+    var button = form.querySelector('button');
+    function done(){
+      form.classList.add('done');
+      status.textContent = 'Thanks! You\u2019re on the list.';
+    }
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (document.getElementById('signup-hp').value) { done(); return; }
+      button.disabled = true;
+      status.textContent = 'Sending…';
+      fetch(form.action, {method: 'POST', body: new FormData(form), mode: 'no-cors'})
+        .then(function(){
+          done();
+          gtag('event', 'sign_up', {method: 'covenants_updates'});
+        })
+        .catch(function(){
+          button.disabled = false;
+          status.textContent = 'That didn’t go through. Please check your connection and try again.';
+        });
+    });
+  })();
+</script>
 </body>
 </html>
