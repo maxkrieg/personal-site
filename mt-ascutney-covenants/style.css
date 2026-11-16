@@ -185,6 +185,10 @@ footer strong{color:var(--ink)}
 .doc-link{justify-self:start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 18px;border-radius:999px;background:var(--ember);color:var(--spruce-deep);font-size:.88em;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
 .doc-link .ico{width:18px;height:18px}
 .doc-link:hover{background:#f9d4bb}
+.doc-link.ghost{background:transparent;color:var(--ember);border:2px solid var(--ember);box-shadow:none}
+.doc-link.ghost:hover{background:color-mix(in srgb, var(--ember) 14%, transparent)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px 12px}
+@media print{.hero-cta{display:none}}
 .quote cite a{color:inherit;text-underline-offset:2px}
 
 /* Ways into the details page from the main page */
