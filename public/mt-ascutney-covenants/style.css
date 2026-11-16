@@ -49,8 +49,8 @@ b,strong{font-weight:700}
 .scene{display:block;width:100%;height:clamp(170px,26vw,320px);margin-top:4px}
 .scene .sun{fill:var(--ember);opacity:.9}
 .scene .hills{fill:color-mix(in srgb, var(--spruce-ink) 7%, transparent)}
-.scene .trails path{fill:none;stroke:var(--spruce-ink);stroke-opacity:.16;stroke-width:9;stroke-linecap:round}
-.scene .lift path{fill:none;stroke:var(--ember);stroke-opacity:.55;stroke-width:2}
+.scene .trails path{fill:none;stroke:var(--spruce-ink);stroke-opacity:.13;stroke-width:18;stroke-linecap:round}
+.scene .lift path{fill:none;stroke:var(--ember);stroke-opacity:.8;stroke-width:2.5}
 .scene .lift > path:first-child{stroke-dasharray:3 6}
 .scene .trees{fill:var(--spruce-deep)}
 .scene .ground{fill:var(--paper)}
